@@ -5,19 +5,24 @@
             <b-tr>
                 <b-td class="right-description">
                     <br>
-                    <p class="right-description">Hello mama bond. This is a fatty doggo. I love dogs. My auntie loves eating dogs.
-                        I bite at the tongue that eats me! Some kind of animal mechanical cannibal.</p>
+                    <p class="right-description">
+<!--                        Hello mama bond. This is a fatty doggo. I love dogs. My auntie loves eating dogs.-->
+<!--                        I bite at the tongue that eats me! Some kind of animal mechanical cannibal.-->
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                 </b-td>
                 <b-td rowspan="2">
                     <iframe class="right-video" src="https://www.youtube.com/embed/l8_3vzl4-EE"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<!--                    <iframe class="right-video" src="https://www.youtube.com/embed/DODLEX4zzLQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
                 </b-td>
             </b-tr>
             <b-tr>
                 <b-td>
-                    <p class="right-title">Hello mama bond</p>
-                    <p class="right-subtitle">Hello mama bond</p>
+                    <p class="right-title">Sneeze</p>
+                    <p class="right-subtitle">Dir. Daphne Martinez and Euan Widjaja</p>
                 </b-td>
             </b-tr>
 
@@ -26,20 +31,25 @@
 
             <b-tr>
                 <b-td rowspan="2">
-                    <iframe class="left-video" src="https://www.youtube.com/embed/rHy1MmFnH9Q"
+                    <iframe class="left-video" src="https://www.youtube.com/embed/pWMarolCyyc"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<!--                    <iframe class="left-video" src="https://www.youtube.com/embed/KtRaQxuQDk4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
                 </b-td>
                 <b-td class="left-description">
                     <br>
-                    <p class="left-description">Hello mama bond. This is a fatty doggo. I love dogs. My auntie loves eating dogs.
-                        I bite at the tongue that eats me! Some kind of animal mechanical cannibal.</p>
+                    <p class="left-description">
+<!--                        Hello mama bond. This is a fatty doggo. I love dogs. My auntie loves eating dogs.-->
+<!--                        I bite at the tongue that eats me! Some kind of animal mechanical cannibal.-->
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                 </b-td>
             </b-tr>
             <b-tr>
                 <b-td>
-                    <p class="left-title">Hello mama bond</p>
-                    <p class="left-subtitle">Hello mama bond</p>
+                    <p class="left-title">Birthday Surprise</p>
+                    <p class="left-subtitle">Dir. Euan Widjaja</p>
                 </b-td>
             </b-tr>
         </b-table-simple>
@@ -75,28 +85,28 @@
     }
 
     .right-description {
-        font-family: "Futura-CondensedExtraBold", 'Cooper Black Regular', Avenir, Arial, sans-serif;
+        font-family: Futura-CondensedExtraBold, 'Cooper Black Regular', Avenir, Arial, sans-serif;
         font-size: 20px;
         height: 20%;
         text-align: right;
-        color: sandybrown;
+        color: #F5F5F5;
         margin-right: 60px;
     }
 
     .right-title {
-        font-family: 'Cooper Black Regular', Avenir, Arial, sans-serif;
+        font-family: FuturaLT-HeavyOblique, Avenir, Arial, sans-serif;
         font-size: 50px;
         text-align: right;
         vertical-align: bottom;
-        color: sandybrown;
+        color: #F5F5F5;
         margin-bottom: 0;
         margin-right: 60px;
     }
 
     .right-subtitle {
-        font-family: 'Cooper Black Regular', Avenir, Arial, sans-serif;
+        font-family: FuturaLT-Heavy, Avenir, Arial, sans-serif;
         text-align: right;
-        color: sandybrown;
+        color: #F5F5F5;
         margin-top: 0;
         margin-right: 60px;
     }
@@ -108,28 +118,28 @@
 
 
     .left-description {
-        font-family: "Futura-CondensedExtraBold", 'Cooper Black Regular', Avenir, Arial, sans-serif;
+        font-family: FuturaLT-CondExtraBoldObl, 'Cooper Black Regular', Avenir, Arial, sans-serif;
         font-size: 20px;
         height: 20%;
         text-align: left;
-        color: sandybrown;
+        color: #F5F5F5;
         margin-left: 60px;
     }
 
     .left-title {
-        font-family: 'Cooper Black Regular', Avenir, Arial, sans-serif;
+        font-family: FuturaLT-HeavyOblique, Avenir, Arial, sans-serif;
         font-size: 50px;
         text-align: left;
         vertical-align: bottom;
-        color: sandybrown;
+        color: #F5F5F5;
         margin-bottom: 0;
         margin-left: 60px;
     }
 
     .left-subtitle {
-        font-family: 'Cooper Black Regular', Avenir, Arial, sans-serif;
+        font-family: FuturaLT-Heavy, Avenir, Arial, sans-serif;
         text-align: left;
-        color: sandybrown;
+        color: #F5F5F5;
         margin-top: 0;
         margin-left: 60px;
     }

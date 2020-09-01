@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import App from './Home.vue';
+import App from './Portfolio.vue';
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
 import VueResizeText from 'vue-resize-text';
 
@@ -10,4 +10,4 @@ Vue.use(VueResizeText);
 
 new Vue({
   render: h => h(App),
-}).$mount('#home');
+}).$mount('#portfolio');
