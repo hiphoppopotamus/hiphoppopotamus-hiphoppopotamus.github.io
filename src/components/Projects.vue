@@ -15,7 +15,7 @@
                     <br>
                 </b-td>
                 <b-td rowspan="2">
-                    <iframe class="right-video" src="https://www.youtube.com/embed/l8_3vzl4-EE"
+                    <iframe class="right-video" src="https://www.youtube.com/embed/elbYKKMY3HM"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </b-td>
             </b-tr>
@@ -31,7 +31,7 @@
 
             <b-tr>
                 <b-td rowspan="2">
-                    <iframe class="left-video" src="https://www.youtube.com/embed/pWMarolCyyc"
+                    <iframe class="left-video" src="https://www.youtube.com/embed/Grb-r-GJyYk"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </b-td>
                 <b-td class="left-description">

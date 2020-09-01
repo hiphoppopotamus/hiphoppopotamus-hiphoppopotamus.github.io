@@ -58,7 +58,7 @@
 
     .jumbotron {
         border-radius: 15px;
-        margin: 70px 55px 25px;
+        margin: 60px 55px 25px;
         /*margin: 0 1%;*/
         padding-top: 56px;
         padding-bottom: 56px;
