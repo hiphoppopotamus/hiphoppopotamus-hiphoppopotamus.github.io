@@ -30,15 +30,20 @@
                     </a>
                 </li>
                 <li>
+                    <a href="mailto:euanwidjaja@yahoo.co.nz">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
                     <a href="https://www.linkedin.com/in/euan-widjaja-092952191/">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                 </li>
-<!--                <li>-->
-<!--                    <a href="https://www.youtube.com/channel/UCjODs5UKi3wjYfgtE1Ohl6A">-->
-<!--                        <i class="fab fa-youtube"></i>-->
-<!--                    </a>-->
-<!--                </li>-->
+                <li>
+                    <a href="https://www.youtube.com/channel/UCR-wVSOXH2e9q8qpJmyMaEA/">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
             </ul>
         </b-jumbotron>
     </div>
@@ -53,7 +58,7 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     #home {
-
+        padding-bottom: 12px;
     }
 
     .jumbotron {
@@ -78,6 +83,7 @@
     }
 
     .display-3 {
+        margin-top: 0px;
         font-family: 'Cooper Black Regular', Avenir, Helvetica, Arial, sans-serif;
         text-shadow: 5px 5px 2px #102e3c;
         font-size: 4.3em;
@@ -97,7 +103,6 @@
         font-family: FuturaLT-Heavy, Helvetica, Arial, sans-serif;
         margin-left: 25%;
         margin-right: 25%;
-        margin-bottom: 1.7%;
         font-size: 1.19em;
     }
 
@@ -136,7 +141,7 @@
         text-align: center;
         align-items: center;
         justify-content: center;
-        margin-top: 26px;
+        margin-top: 25px;
         padding: 0;
         list-style-type: none;
     }
@@ -144,31 +149,31 @@
     ul li{
         position: relative;
         display: block;
-        color: #666;
+        color: #6d696d;
         font-size: 30px;
         height: 60px;
         width: 60px;
-        background: #171515;
+        background: rgba(3, 8, 22, 0.69);
         line-height: 60px;
-        border-radius: 50%;
+        border-radius: 30%;
         margin: 0 15px;
         cursor: pointer;
         transition: 0.5s;
     }
 
-    ul li:before{
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        height: inherit;
-        width: inherit;
-        /* background: #d35400; */
-        border-radius: 50%;
-        transform: scale(.9);
-        z-index: -1;
-        transition: .5s;
-    }
+    /*ul li:before{*/
+    /*    position: absolute;*/
+    /*    content: '';*/
+    /*    top: 0;*/
+    /*    left: 0;*/
+    /*    height: inherit;*/
+    /*    width: inherit;*/
+    /*    !* background: #d35400; *!*/
+    /*    border-radius: 50%;*/
+    /*    transform: scale(.9);*/
+    /*    z-index: -1;*/
+    /*    transition: .5s;*/
+    /*}*/
 
     /*ul li:nth-child(1):hover{*/
     /*    color: #456cba;*/
@@ -190,10 +195,12 @@
     /*    color: #e23670;*/
     /*}*/
 
+
     ul li:nth-child(1):hover{
-        color: darkgrey;
-        box-shadow: 0 0 10px darkgrey;
-        text-shadow: 0 0 2px darkgrey;
+        /*color: darkgrey;*/
+        box-shadow: 0px 0px 20px #102e3c;
+        /*box-shadow: 0 0 20px darkgrey;*/
+        /*text-shadow: 0 0 0 darkgrey;*/
     }
 
     ul li:nth-child(1) a {
@@ -201,22 +208,34 @@
     }
 
     ul li:nth-child(2):hover{
-        color: #2a6cbb;
-        box-shadow: 0 0 15px #2867B2;
-        text-shadow: 0 0 2px #2867B2;
+        color: #ff0000;
+        box-shadow: 0px 0px 20px #102e3c;
+        text-shadow: 0 0 0 #ff0000;
     }
 
     ul li:nth-child(2) a {
+        color: #5db6ff;
+    }
+
+    ul li:nth-child(3):hover{
+        /*color: #2a6cbb;*/
+        box-shadow: 0px 0px 20px #102e3c;
+        /*box-shadow: 0 0 20px #2867B2;*/
+        /*text-shadow: 0 0 0 #2867B2;*/
+    }
+
+    ul li:nth-child(3) a {
         color: #2a6cbb;
     }
 
-    /*ul li:nth-child(3):hover{*/
-    /*    color: #ff1a1a;*/
-    /*    box-shadow: 0 0 10px #ff0000;*/
-    /*    text-shadow: 0 0 2px #ff0000;*/
-    /*}*/
 
-    /*ul li:nth-child(3) a {*/
-    /*    color: #ff1a1a;*/
-    /*}*/
+    ul li:nth-child(4):hover{
+        color: #ff0000;
+        box-shadow: 0px 0px 20px #102e3c;
+        text-shadow: 0 0 0 #ff0000;
+    }
+
+    ul li:nth-child(4) a {
+        color: #ff0000;
+    }
 </style>
