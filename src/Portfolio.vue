@@ -32,7 +32,8 @@ export default {
     scroll-behavior: smooth;
   }
 
-  #portfolio {background: rgb(16,46,60);
+  #portfolio {
+    background: rgb(16,46,60);
     background: linear-gradient(0deg, rgba(16,46,60,1) 4%, rgba(250,74,38,1) 50%, rgba(16,46,60,1) 94%);
     /*background: rgb(16,46,60);*/
     /*background: linear-gradient(0deg, rgba(16,46,60,1) 0%, rgba(253,70,33,1) 52%, rgba(16,46,60,1) 100%);*/
@@ -51,7 +52,14 @@ export default {
     /*background: linear-gradient(180deg, rgba(252,238,214,1) 0%, rgba(251,225,220,1) 32%, rgba(249,225,230,1) 85%, rgba(215,226,231,1) 100%);*/
     /*background: rgb(252,238,214);*/
     /*background: linear-gradient(180deg, rgba(252,238,214,1) 0%, rgba(255,140,118,1) 32%, rgba(241,148,167,1) 85%, rgba(16,46,60,1) 100%);*/
+
   }
+
+  /*#portfolio {*/
+    /*position:relative;*/
+    /*height: 100%;*/
+    /*overflow-y:scroll;*/
+/*}*/
 
   @font-face {
     font-family: 'Cooper Black Regular';

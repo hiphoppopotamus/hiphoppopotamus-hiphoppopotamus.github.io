@@ -1,6 +1,7 @@
 <template>
     <div id="navigation-header">
         <b-navbar id="navbar" fixed="top" toggleable="md" type="dark" variant="onyx-blue">
+<!--                  v-b-scrollspy:portfolio="{offset:100}"-->
             <b-navbar-brand href="#">euan widjaja</b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
