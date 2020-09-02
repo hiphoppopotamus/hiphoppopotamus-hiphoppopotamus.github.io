@@ -26,32 +26,15 @@ export default {
    * Smooth scrolling on the whole document
    */
   html {
+    height: 100%;
     scroll-padding-top: 100px; /* height of sticky header */
     scroll-behavior: smooth;
   }
 
-  #portfolio {
+  body {
     background: rgb(16,46,60);
     background: linear-gradient(0deg, rgba(250,74,38,1) 0%, rgba(16,46,60,1) 80%);
-
-    /*background: linear-gradient(0deg, rgba(16,46,60,1) 4%, rgba(250,74,38,1) 50%, rgba(16,46,60,1) 94%);*/
-    /*background: rgb(16,46,60);*/
-    /*background: linear-gradient(0deg, rgba(16,46,60,1) 0%, rgba(253,70,33,1) 52%, rgba(16,46,60,1) 100%);*/
-    /*background: rgb(253,70,33);*/
-    /*background: radial-gradient(circle, rgba(253,70,33,1) 0%, rgba(16,46,60,1) 86%);*/
-    /*background: rgb(254,159,29);*/
-    /*background: linear-gradient(*/
-    /*        180deg,*/
-    /*        rgba(254,159,29,1) 0%,*/
-    /*        rgba(253,70,33,1) 32%,*/
-    /*        rgba(85,41,51,1) 85%,*/
-    /*        rgba(16,46,60,1) 100%);*/
-    /*background: rgb(237,223,200);*/
-    /*background: linear-gradient(180deg, rgba(237,223,200,1) 0%, rgba(245,185,173,1) 32%, rgba(219,187,194,1) 75%, rgba(211,234,245,1) 100%);*/
-    /*background: rgb(252,238,214);*/
-    /*background: linear-gradient(180deg, rgba(252,238,214,1) 0%, rgba(251,225,220,1) 32%, rgba(249,225,230,1) 85%, rgba(215,226,231,1) 100%);*/
-    /*background: rgb(252,238,214);*/
-    /*background: linear-gradient(180deg, rgba(252,238,214,1) 0%, rgba(255,140,118,1) 32%, rgba(241,148,167,1) 85%, rgba(16,46,60,1) 100%);*/
+    background-size: cover;
   }
 
   @font-face {
