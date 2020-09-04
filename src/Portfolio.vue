@@ -1,6 +1,5 @@
 <template>
   <div id="portfolio">
-    <br>
     <NavigationHeader/>
     <Home/>
 <!--    <Projects/>-->
@@ -22,19 +21,19 @@ export default {
 </script>
 
 <style>
-  /**
-   * Smooth scrolling on the whole document
-   */
   html {
-    height: 100%;
-    scroll-padding-top: 100px; /* height of sticky header */
     scroll-behavior: smooth;
+
   }
 
   body {
     background: rgb(16,46,60);
     background: linear-gradient(0deg, rgba(250,74,38,1) 0%, rgba(16,46,60,1) 80%);
-    background-size: cover;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
     /*background: rgb(16,46,60);*/
     /*background: linear-gradient(0deg, rgba(16,46,60,1) 4%, rgba(250,74,38,1) 50%, rgba(16,46,60,1) 94%);*/
     /*background: rgb(16,46,60);*/
@@ -55,12 +54,6 @@ export default {
     /*background: rgb(252,238,214);*/
     /*background: linear-gradient(180deg, rgba(252,238,214,1) 0%, rgba(255,140,118,1) 32%, rgba(241,148,167,1) 85%, rgba(16,46,60,1) 100%);*/
   }
-
-  /*#portfolio {*/
-    /*position:relative;*/
-    /*height: 100%;*/
-    /*overflow-y:scroll;*/
-/*}*/
 
   @font-face {
     font-family: 'Cooper Black Regular';

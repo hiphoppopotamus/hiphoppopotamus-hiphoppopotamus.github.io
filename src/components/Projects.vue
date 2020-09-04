@@ -4,15 +4,10 @@
         <b-table-simple class="table-borderless">
             <b-tr>
                 <b-td class="right-description">
-                    <br>
                     <p class="right-description">
 <!--                        Hello mama bond. This is a fatty doggo. I love dogs. My auntie loves eating dogs.-->
 <!--                        I bite at the tongue that eats me! Some kind of animal mechanical cannibal.-->
                     </p>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
                 </b-td>
                 <b-td rowspan="2">
                     <iframe class="right-video" src="https://www.youtube.com/embed/elbYKKMY3HM"
@@ -35,15 +30,10 @@
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </b-td>
                 <b-td class="left-description">
-                    <br>
                     <p class="left-description">
 <!--                        Hello mama bond. This is a fatty doggo. I love dogs. My auntie loves eating dogs.-->
 <!--                        I bite at the tongue that eats me! Some kind of animal mechanical cannibal.-->
                     </p>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
                 </b-td>
             </b-tr>
             <b-tr>
@@ -62,7 +52,6 @@
     }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     #projects {
         margin: 20px 80px;
