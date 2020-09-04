@@ -8,7 +8,7 @@
                 <!-- Right aligned nav items -->
                 <b-navbar-nav class="ml-auto">
                     <b-nav-item class="anchor" href="#home">HOME</b-nav-item>
-                    <b-nav-item class="anchor" href="#projects">PROJECTS</b-nav-item>
+<!--                    <b-nav-item class="anchor" href="#projects">PROJECTS</b-nav-item>-->
                     <b-nav-item class="anchor"
                                 href="https://drive.google.com/file/d/1GU5R77zHob4qKCG8j8nrHy8eljovrDoR/view?usp=sharing"
                                 target="_blank">RESUME</b-nav-item>
