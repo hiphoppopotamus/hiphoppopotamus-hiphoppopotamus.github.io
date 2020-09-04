@@ -80,9 +80,7 @@
     hr {
         height: 10px;
         width: 70%;
-        /* Set the hr color */
-        /*color: #102e3c; !* old IE *!*/
-        background-color: #102e3c; /* Modern Browsers */
+        background-color: #0b232d; /* Modern Browsers */
         border-radius: 5px;
     }
 

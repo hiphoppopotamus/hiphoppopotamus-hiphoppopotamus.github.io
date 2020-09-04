@@ -17,7 +17,7 @@
 
 <script>
     export default {
-        name: 'NavigationHeader',
+        name: 'NavigationHeader'
     }
 </script>
 
@@ -31,14 +31,8 @@
         margin-bottom: 70px;
     }
 
-    @media screen and (min-width: 1370px) {
-        body.hero-image #main > .hero-container .img-wide {
-            display: inline;
-        }
-    }
-
     .navbar {
-        min-height: 13%;
+        min-height: 85px;
         font-size: 140%;
     }
 
@@ -56,6 +50,6 @@
     }
 
     .bg-onyx-blue {
-        background-color: #102e3c !important;
+        background-color: #0b232d !important;
      }
 </style>

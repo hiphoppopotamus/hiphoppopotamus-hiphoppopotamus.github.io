@@ -9,7 +9,7 @@
             <hr class="my-4">
             <p id="description">
                 I am a Software Engineering student based in Wellington that values creativity and diversity in the process of development.
-                <br> I take pride in my passion to write simple systems and grounded stories that
+                <br> I take pride in my passion to write simple software and grounded stories that
                 <b id="bolded-description">“comfort the afflicted and afflict the comfortable”.</b>
             </p>
             <ul id="avatar-list">
@@ -51,8 +51,8 @@
         min-height: 400px;
         background:
             linear-gradient(
-                rgba(0, 0, 0, 0.30),
-                rgba(0, 0, 0, 0.7)
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.76)
             ),
             url('../images/abstract-bg.jpg');
         background-size: cover;
@@ -75,7 +75,6 @@
         font-size: 47%;
         font-family: "FuturaLT-CondExtraBoldObl", 'Cooper Black Regular', Arial, sans-serif;
         text-shadow: 4px 4px 2px #102e3c;
-        color: sandybrown;
     }
 
     #description {
@@ -88,13 +87,13 @@
 
     #bolded-description {
         font-family: FuturaLT-HeavyOblique, Helvetica, Arial, sans-serif;
-        color: floralwhite;
+        color: antiquewhite;
     }
 
     hr {
         height: 10px;
         width: 70%;
-        background-color: #102e3c;
+        background-color: #0b232d;
         border-radius: 5px;
     }
 
@@ -122,22 +121,22 @@
     }
 
     #avatar-list li:hover{
-        box-shadow: 0 0 20px #102e3c;
+        box-shadow: 0 0 18px whitesmoke;
     }
 
     #github-avatar a {
-        color: darkgrey;
+        color: antiquewhite;
     }
 
     #mail-avatar a {
-        color: #5db6ff;
+        color: antiquewhite;
     }
 
     #linkedin-avatar a {
-        color: #2a6cbb;
+        color: antiquewhite;
     }
 
     #youtube-avatar a {
-        color: #ff0000;
+        color: antiquewhite;
     }
 </style>
