@@ -27,8 +27,8 @@ export default {
   }
 
   body {
-    background: rgb(16,46,60);
-    background: linear-gradient(0deg, rgba(250,74,38,1) 0%, rgba(16,46,60,1) 80%);
+    background: rgba(250,74,38,1);
+    background: linear-gradient(0deg, rgb(5, 15, 19) 0%, rgba(11,35,45,1) 80%);
     height: 100%;
     margin: 0;
     background-repeat: no-repeat;
