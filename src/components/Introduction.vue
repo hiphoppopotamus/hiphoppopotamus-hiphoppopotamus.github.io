@@ -1,10 +1,9 @@
 <template>
-    <div id="home">
-        <br>
+    <div id="introduction">
         <b-jumbotron>
             <template v-slot:header>
-                <p id="header">Hey, it's Euan</p>
-                <p id="subheader">Student | Software Engineer | Filmmaker</p>
+                <h1 id="intro-header">Hey, it's Euan</h1>
+                <h2 id="intro-subheader">Student | Software Engineer | Filmmaker</h2>
             </template>
             <hr class="my-4">
             <p id="description">
@@ -40,7 +39,7 @@
 
 <script>
     export default {
-        name: 'Home.vue',
+        name: 'Introduction',
     }
 </script>
 
@@ -51,29 +50,28 @@
         min-height: 400px;
         background:
             linear-gradient(
-                rgba(0, 0, 0, 0.4),
+                rgba(18, 18, 18, 0.5),
                 rgba(0, 0, 0, 0.76)
             ),
-            url('../images/abstract-bg.jpg');
+            url('../assets/images/abstract-bg.jpg');
         background-size: cover;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
-        color: sandybrown;
-
+        color: #d89351;
     }
 
-    #header {
+    #intro-header {
         margin-bottom: 0.5%;
         font-size: 100%;
-        font-family: 'Cooper Black Regular', Avenir, Helvetica, Arial, sans-serif;
+        font-family: CooperBlack-Regular, FuturaLT-CondExtraBoldObl, Helvetica, Arial, sans-serif;
         text-shadow: 5px 5px 2px #102e3c;
     }
 
 
-    #subheader {
+    #intro-subheader {
         font-size: 47%;
-        font-family: "FuturaLT-CondExtraBoldObl", 'Cooper Black Regular', Arial, sans-serif;
+        font-family: FuturaLT-CondExtraBoldObl, CooperBlack-Regular, Arial, sans-serif;
         text-shadow: 4px 4px 2px #102e3c;
     }
 
