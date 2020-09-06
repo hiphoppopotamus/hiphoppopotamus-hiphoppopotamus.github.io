@@ -2,41 +2,57 @@
     <div id="projects-component">
         <div>
             <b-jumbotron
-                    :class="{ 'project-jumbotron-hovered': !isSoftware }"
-                    @mouseover="this.toggleSoftwareHover"
-                    @mouseleave="this.toggleSoftwareUnhover">
+                    @mouseover="isSoftware = false"
+                    @mouseleave="isSoftware = true">
                 <template v-if="isSoftware" v-slot:header>
                     <div class="project-header-unhovered">
                         <h1>software</h1>
                     </div>
                 </template>
                 <template v-else v-slot:lead>
-                    <div class="item"
+                    <a class="item"
                          v-for="snippet in softwareSnippets"
                          :key="snippet.id"
-                         v-bind:style="{ backgroundImage: 'url(' + require('@/assets/' + snippet.url) + ')' }"
+                         v-bind:style="{ backgroundImage: 'url(' + require('@/assets/' + snippet.path) + ')' }"
+                         :href="snippet.url" target="_blank"
                     >
-                    </div>
+                            <div v-if="snippet.id !== 3" class="software-snippet-details">
+                                <h1> {{ snippet.name }} </h1>
+                                <ul class="skills-list">
+                                    <li v-for="skill in snippet.skills" :key="skill">
+                                        <h3>
+                                            <b-badge pill variant="light" > {{ skill }} </b-badge>
+                                        </h3>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div v-else class="software-snippet-details">
+                                <h1 id="software-more"> {{ snippet.name }} </h1>
+                            </div>
+                    </a>
                 </template>
             </b-jumbotron>
         </div>
         <div>
             <b-jumbotron
-                    :class="{ 'project-jumbotron-hovered': !isShortFilm }"
-                    @mouseover="this.toggleShortFilmHover"
-                    @mouseleave="this.toggleShortFilmUnhover">
+                    @mouseover="isShortFilm = false"
+                    @mouseleave="isShortFilm = true">
                 <template v-if="isShortFilm" v-slot:header>
                     <div class="project-header-unhovered">
                         <h1>short films</h1>
                     </div>
                 </template>
                 <template v-else v-slot:lead>
-                    <div class="item"
+                    <a class="item"
                          v-for="snippet in shortFilmSnippets"
                          :key="snippet.id"
-                         v-bind:style="{ backgroundImage: 'url(' + require('@/assets/' + snippet.url) + ')' }"
+                         v-bind:style="{ backgroundImage: 'url(' + require('@/assets/' + snippet.path) + ')' }"
+                         :href="snippet.url" target="_blank"
                     >
-                    </div>
+                        <div class="short-film-snippet-details">
+                            <h2 class="short-film-name"> {{ snippet.name }} </h2>
+                        </div>
+                    </a>
                 </template>
             </b-jumbotron>
         </div>
@@ -97,54 +113,60 @@
                 softwareSnippets: [
                     {
                         id: 1,
-                        url: "images/SpaceJamSnippet.png"
+                        path: "images/SpaceJamSnippet.png",
+                        url: "https://www.youtube.com/watch?v=rwLaeRA3WpI",
+                        name: "SPACE JAM",
+                        skills: [
+                            'Java',
+                            'Swing'
+                        ]
                     },
                     {
                         id: 2,
-                        url: "images/BecomeASaintSnippet.png"
+                        path: "images/BecomeASaintSnippet.png",
+                        url: null,
+                        name: "BECOME A SAINT",
+                        skills: [
+                            'Vue.js',
+                            'Node.js',
+                            'MySQL'
+                        ]
                     },
                     {
                         id: 3,
-                        url: "images/abstract-bg.jpg"
+                        path: "images/abstract-bg.jpg",
+                        url: "https://github.com/hiphoppopotamus",
+                        name: "MORE PROJECTS"
                     }
                 ]
                 ,
                 shortFilmSnippets: [
                     {
                         id: 1,
-                        url: "images/SneezeSnippet.png"
+                        path: "images/SneezeSnippet.png",
+                        url: "https://www.youtube.com/watch?v=elbYKKMY3HM",
+                        name: "SNEEZE",
+                        director: "Daphne Martinez & Euan Widjaja"
                     },
                     {
                         id: 2,
-                        url: "images/BirthdaySurpriseSnippet.png"
+                        path: "images/BirthdaySurpriseSnippet.png",
+                        url: "https://www.youtube.com/watch?v=Grb-r-GJyYk",
+                        name: "BIRTHDAY SURPRISE",
+                        director: "Euan Widjaja"
+
                     },
                     {
                         id: 3,
-                        url: "images/abstract-bg.jpg"
+                        path: "images/abstract-bg.jpg",
+                        name: "COMING SOON"
                     }
                 ]
-                // background-image: url("../assets/images/SpaceJamSnippet.png");
-
             }
         },
 
         methods: {
 
-            toggleSoftwareHover() {
-                this.isSoftware = false;
-            },
-
-            toggleSoftwareUnhover() {
-                this.isSoftware = true;
-            },
-
-            toggleShortFilmHover() {
-                this.isShortFilm = false;
-            },
-
-            toggleShortFilmUnhover() {
-                this.isShortFilm = true;
-            }
         }
     }
 </script>
@@ -153,10 +175,6 @@
     #projects-component {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-    }
-
-    #project-container {
-
     }
 
     .jumbotron {
@@ -173,7 +191,7 @@
         font-family: FuturaLT-CondExtraBoldObl, Avenir, Helvetica, Arial, sans-serif;
     }
 
-    .project-jumbotron-hovered {
+    .jumbotron:hover {
         padding: 0 0 0 0;
         background:
                 linear-gradient(
@@ -190,14 +208,8 @@
         text-shadow: 5px 5px 2px #102e3c;
     }
 
-    .project-display-3-hovered {
-    }
-
     .project-header-unhovered h1 {
         font-size: 90%;
-    }
-
-    .project-header-hovered {
     }
 
     .lead {
@@ -217,15 +229,49 @@
         border: 2px hidden #f00;
         border-radius: 12px;
 
-        /*background-image: url("../assets/images/SneezeSnippet.png");*/
         background-repeat: no-repeat;
         background-size: 100%;
+        box-shadow:inset 0 0 0 2000px rgba(9, 9, 9, 0.6);
 
         flex: 0 0 388px;
         text-align: center;
-        transition: transform 300ms ease 100ms;
     }
 
+    .software-snippet-details {
+        margin-top: 75px;
+        color: white;
+    }
+
+    .short-film-snippet-details {
+        margin-top: 105px;
+        color: white;
+    }
+
+    .short-film-name {
+        margin-top: 50px;
+
+    }
+
+    #software-more {
+        margin-top: 100px;
+    }
+
+    .skills-list {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .skills-list li{
+        margin: 0 5px;
+    }
+
+    .skills-list li:hover{
+    }
 
 
 
@@ -306,6 +352,8 @@
         margin-top: 0;
         margin-left: 60px;
     }
+
+
 
 
     /*#projects-header-container {*/
