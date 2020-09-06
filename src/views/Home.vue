@@ -1,21 +1,18 @@
 <template>
-  <div id="portfolio">
+  <div id="home">
     <NavigationHeader/>
-    <Home/>
-<!--    <Projects/>-->
+    <Introduction/>
   </div>
 </template>
 
 <script>
-import NavigationHeader from './components/NavigationHeader.vue'
-import Home from './components/Home.vue'
-// import Projects from './components/Projects.vue'
+import NavigationHeader from '../components/NavigationHeader.vue'
+import Introduction from '../components/Introduction.vue'
 
 export default {
-  name: 'App',
+  name: 'Home',
   components: {
-    NavigationHeader, Home,
-    // Projects
+    NavigationHeader, Introduction,
   }
 }
 </script>
@@ -27,12 +24,10 @@ export default {
   }
 
   body {
-    background: rgba(250,74,38,1);
-    background: linear-gradient(0deg, rgb(5, 15, 19) 0%, rgba(11,35,45,1) 80%);
+    /*background: linear-gradient(0deg, rgb(5, 15, 19) 0%, rgba(11,35,45,1) 80%);*/
     height: 100%;
     margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: rgb(7, 21, 27) no-repeat fixed;
 
     /*background: rgb(16,46,60);*/
     /*background: linear-gradient(0deg, rgba(16,46,60,1) 4%, rgba(250,74,38,1) 50%, rgba(16,46,60,1) 94%);*/
@@ -55,80 +50,104 @@ export default {
     /*background: linear-gradient(180deg, rgba(252,238,214,1) 0%, rgba(255,140,118,1) 32%, rgba(241,148,167,1) 85%, rgba(16,46,60,1) 100%);*/
   }
 
+  #home {
+
+  }
+
   @font-face {
-    font-family: 'Cooper Black Regular';
+    font-family: 'CooperBlack-Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Cooper Black Regular'), url('fonts/cooper-black/COOPBL.woff') format('woff');
+    src: local('CooperBlack-Regular'), url('../assets/fonts/cooper-black/COOPBL.woff') format('woff');
   }
 
   @font-face {
     font-family: 'FuturaLT-CondExtraBoldObl';
     font-style: normal;
     font-weight: normal;
-    src: local('FuturaLT-CondExtraBoldObl'), url('fonts/futura/FuturaLT-CondExtraBoldObl.ttf') format('truetype');
+    src: local('FuturaLT-CondExtraBoldObl'), url('../assets/fonts/futura/FuturaLT-CondExtraBoldObl.ttf') format('truetype');
   }
 
   @font-face {
     font-family: 'FuturaLT-Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('FuturaLT-Bold'), url('fonts/futura/FuturaLT-Bold.ttf') format('truetype');
+    src: local('FuturaLT-Bold'), url('../assets/fonts/futura/FuturaLT-Bold.ttf') format('truetype');
   }
 
   @font-face {
     font-family: 'FuturaLT-BoldOblique';
     font-style: normal;
     font-weight: normal;
-    src: local('FuturaLT-BoldOblique'), url('fonts/futura/FuturaLT-BoldOblique.ttf') format('truetype');
+    src: local('FuturaLT-BoldOblique'), url('../assets/fonts/futura/FuturaLT-BoldOblique.ttf') format('truetype');
   }
 
   @font-face {
     font-family: 'FuturaLT-Book';
     font-style: normal;
     font-weight: normal;
-    src: local('FuturaLT-Book'), url('fonts/futura/FuturaLT-Book.ttf') format('truetype');
+    src: local('FuturaLT-Book'), url('../assets/fonts/futura/FuturaLT-Book.ttf') format('truetype');
   }
 
   @font-face {
     font-family: 'FuturaLT-BookOblique';
     font-style: normal;
     font-weight: normal;
-    src: local('FuturaLT-BookOblique'), url('fonts/futura/FuturaLT-BookOblique.ttf') format('truetype');
+    src: local('FuturaLT-BookOblique'), url('../assets/fonts/futura/FuturaLT-BookOblique.ttf') format('truetype');
   }
 
   @font-face {
     font-family: 'FuturaLT-Heavy';
     font-style: normal;
     font-weight: normal;
-    src: local('FuturaLT-Heavy'), url('fonts/futura/FuturaLT-Heavy.ttf') format('truetype');
+    src: local('FuturaLT-Heavy'), url('../assets/fonts/futura/FuturaLT-Heavy.ttf') format('truetype');
   }
 
   @font-face {
     font-family: 'FuturaLT-HeavyOblique';
     font-style: normal;
     font-weight: normal;
-    src: local('FuturaLT-HeavyOblique'), url('fonts/futura/FuturaLT-HeavyOblique.ttf') format('truetype');
+    src: local('FuturaLT-HeavyOblique'), url('../assets/fonts/futura/FuturaLT-HeavyOblique.ttf') format('truetype');
   }
 
   @font-face {
     font-family: 'FuturaLT-Light';
     font-style: normal;
     font-weight: normal;
-    src: local('FuturaLT-Light'), url('fonts/futura/FuturaLT-Light.ttf') format('truetype');
+    src: local('FuturaLT-Light'), url('../assets/fonts/futura/FuturaLT-Light.ttf') format('truetype');
   }
 
   @font-face {
     font-family: 'FuturaLT-LightOblique';
     font-style: normal;
     font-weight: normal;
-    src: local('FuturaLT-LightOblique'), url('fonts/futura/FuturaLT-LightOblique.ttf') format('truetype');
+    src: local('FuturaLT-LightOblique'), url('../assets/fonts/futura/FuturaLT-LightOblique.ttf') format('truetype');
   }
 
   @font-face {
     font-family: 'FuturaLT-Oblique';
     font-style: normal;
     font-weight: normal;
-    src: local('FuturaLT-Oblique'), url('fonts/futura/FuturaLT-Oblique.ttf') format('truetype');
+    src: local('FuturaLT-Oblique'), url('../assets/fonts/futura/FuturaLT-Oblique.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'ITC-FranklinGothic';
+    font-style: normal;
+    font-weight: normal;
+    src:
+            local('ITC-FranklinGothic'),
+            url('../assets/fonts/itc-franklin-gothic/ITC-FranklinGothic-DemiCompressed.otf')
+            format('opentype');
+  }
+
+  @font-face {
+    font-family: 'ITC-FranklinGothic';
+    font-style: italic;
+    font-weight: normal;
+    src:
+            local('ITC-FranklinGothic'),
+            url('../assets/fonts/itc-franklin-gothic/ITC-FranklinGothic-DemiCompressed-Italic.otf')
+            format('opentype');
   }
 </style>
