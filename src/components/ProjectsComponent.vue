@@ -178,9 +178,10 @@
     }
 
     .jumbotron {
+        margin: 0 55px 25px;
+        padding: 0;
         text-align: center;
         background: #07151B;
-        margin: 0 55px 25px;
         border-radius: 15px;
         border-style: dotted;
         border-color: burlywood;
@@ -189,10 +190,11 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         font-family: FuturaLT-CondExtraBoldObl, Avenir, Helvetica, Arial, sans-serif;
+        transition: 0.3s;
     }
 
     .jumbotron:hover {
-        padding: 0 0 0 0;
+        padding: 0;
         background:
                 linear-gradient(
                         rgba(18, 18, 18, 0.5),
@@ -209,6 +211,8 @@
     }
 
     .project-header-unhovered h1 {
+        width: 100%;
+        line-height: 162px;
         font-size: 90%;
     }
 
@@ -231,7 +235,7 @@
 
         background-repeat: no-repeat;
         background-size: 100%;
-        box-shadow:inset 0 0 0 2000px rgba(9, 9, 9, 0.6);
+        box-shadow:inset 0 0 0 2000px rgba(9, 9, 9, 0.75);
 
         flex: 0 0 388px;
         text-align: center;
