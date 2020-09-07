@@ -178,7 +178,7 @@
     }
 
     .jumbotron {
-        margin: 0 55px 25px;
+        margin: 0 auto 20px;
         padding: 0;
         text-align: center;
         background: #07151B;
@@ -191,6 +191,7 @@
         -moz-osx-font-smoothing: grayscale;
         font-family: FuturaLT-CondExtraBoldObl, Avenir, Helvetica, Arial, sans-serif;
         transition: 0.3s;
+        max-width: 1171px;
     }
 
     .jumbotron:hover {

@@ -24,7 +24,7 @@
 
 <style scoped>
     #navigation-header {
-        font-family: "Futura-CondensedExtraBold", "Gill Sans", Futura, CooperBlack-Regular, Avenir, Helvetica, Arial, sans-serif;
+        font-family: "FuturaLT-CondensedExtraBold", Avenir, Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;

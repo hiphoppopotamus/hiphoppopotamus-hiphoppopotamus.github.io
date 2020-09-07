@@ -62,6 +62,27 @@ export default {
   }
 
   @font-face {
+    font-family: 'FuturaLT';
+    font-style: normal;
+    font-weight: normal;
+    src: local('FuturaLT'), url('../assets/fonts/futura/FuturaLT.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'FuturaLT-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('FuturaLT-Bold'), url('../assets/fonts/futura/FuturaLT-Bold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'FuturaLT-CondensedExtraBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('FuturaLT-CondensedExtraBold'), url('../assets/fonts/futura/FuturaLT-CondensedExtraBold.ttf') format('truetype');
+  }
+
+  @font-face {
     font-family: 'FuturaLT-CondExtraBoldObl';
     font-style: normal;
     font-weight: normal;
