@@ -8,7 +8,7 @@
                     <b-nav-item class="anchor" :to="{ name: 'home' }">HOME</b-nav-item>
                     <b-nav-item class="anchor" :to="{ name: 'projects' }">PROJECTS</b-nav-item>
                     <b-nav-item class="anchor"
-                                href="https://drive.google.com/file/d/1GU5R77zHob4qKCG8j8nrHy8eljovrDoR/view?usp=sharing"
+                                href="https://drive.google.com/file/d/1CN73G2FEJHVxum-soZDC3A--zhzVZ1Ev/view?usp=sharing"
                                 target="_blank">RESUME</b-nav-item>
                 </b-navbar-nav>
             </b-collapse>
